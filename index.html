@@ -445,17 +445,21 @@
         }
 
         .about-image {
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            overflow: hidden;
-            height: 480px;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            box-shadow: inset 0 0 40px rgba(0,0,0,0.02);
-        }
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    height: 480px;
+    /* Quitamos el fondo degradado y la animación si prefieres que la foto esté fija */
+    background: #f3f4f6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Si quieres que la foto no tenga la animación de flotar, puedes eliminarla 
+   o simplemente no aplicársela a la etiqueta img */
 
         .about-image svg {
             width: 150px;
@@ -974,19 +978,8 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50 15 L80 35 L80 65 L50 85 L20 65 L20 35 Z" stroke="url(#gradient)" stroke-width="1.5" fill="none"/>
-                        <circle cx="50" cy="50" r="15" stroke="url(#gradient)" stroke-width="2"/>
-                        <line x1="50" y1="15" x2="50" y2="85" stroke="url(#gradient)" stroke-width="1" stroke-dasharray="2 2"/>
-                        <line x1="20" y1="50" x2="80" y2="50" stroke="url(#gradient)" stroke-width="1" stroke-dasharray="2 2"/>
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#2563eb" />
-                                <stop offset="100%" stop-color="#06b6d4" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+    <img src="Avatar-Jordan-2026.webp" alt="Jordan Curmina" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
             </div>
         </div>
     </section>
